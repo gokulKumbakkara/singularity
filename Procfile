@@ -1,1 +1,1 @@
-web: gunicorn dgaflask:app --preload
+web: gunicorn app:app --preload
