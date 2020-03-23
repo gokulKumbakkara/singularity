@@ -9,7 +9,7 @@ model = pickle.load(open('model.pkl','rb'))
 app = Flask(__name__)
 
 @app.route("/dgaCheck",methods=['GET'])
-def predict():
+def app():
     domain=request.args['domain']
     X = {'j', '8', 'n', '-', 'm', 't', 'q', 'a', '7', 'p', 'x', 'f', 'w', 'k', '6', '1', 'c', '9', 'r', '2', 'h', '3', '4', 'g', 'y', 'b', 'u', 'e', 'l', '5', 'v', 'z', 'i', 'o', '0', 'd', 's'}
     valid_chars = {x:idx+1 for idx, x in enumerate(X)}
