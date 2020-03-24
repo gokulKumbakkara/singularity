@@ -8,6 +8,12 @@ from keras.preprocessing import sequence
 model = pickle.load(open('model.pkl','rb'))
 app = Flask(__name__)
 
+   
+@app.route('/',methods=['GET'])
+def index():
+    return "<h1>The Cloud based Realtime DGA Detection Engine is Deployed.</h1>"
+
+
 @app.route("/dgaCheck",methods=['GET'])
 def app():
     domain=request.args['domain']
@@ -35,10 +41,7 @@ def app():
       #whitelist.write(",")
       final='Non DGA : Safe!!!'
     return {'message': final}
-    
-@app.route('/',methods=['GET'])
-def index():
-    return "<h1>The Cloud based Realtime DGA Detection Engine is Deployed.</h1>"
+
     
 if __name__ == "__main__":
     app.run(debug=False,threaded=False)
