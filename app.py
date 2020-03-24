@@ -14,7 +14,7 @@ def index():
     return "<h1>The Cloud based Realtime DGA Detection Engine is Deployed.</h1>"
 
 @app.route("/dgaCheck",methods=['GET'])
-def app():
+def predict():
     domain=request.args['domain']
     X = {'j', '8', 'n', '-', 'm', 't', 'q', 'a', '7', 'p', 'x', 'f', 'w', 'k', '6', '1', 'c', '9', 'r', '2', 'h', '3', '4', 'g', 'y', 'b', 'u', 'e', 'l', '5', 'v', 'z', 'i', 'o', '0', 'd', 's'}
     valid_chars = {x:idx+1 for idx, x in enumerate(X)}
