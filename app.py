@@ -9,10 +9,9 @@ model = pickle.load(open('model.pkl','rb'))
 app = Flask(__name__)
 
    
-@app.route('/',methods=['GET'])
-def index():
-    return "<h1>The Cloud based Realtime DGA Detection Engine is Deployed.</h1>"
-
+#@app.route('/',methods=['GET'])
+#def index():
+#    return "<h1>The Cloud based Realtime DGA Detection Engine is Deployed.</h1>"
 
 @app.route("/dgaCheck",methods=['GET'])
 def app():
