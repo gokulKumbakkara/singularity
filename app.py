@@ -43,5 +43,5 @@ def app():
 
     
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,Threaded=True)
     #,threaded=False
