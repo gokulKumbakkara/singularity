@@ -1,1 +1,1 @@
-web: gunicorn app:dgaflask
+web: gunicorn app:app
