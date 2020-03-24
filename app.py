@@ -36,5 +36,9 @@ def app():
       final='Non DGA : Safe!!!'
     return {'message': final}
     
+@app.route('/')
+def index():
+    return "<h1>The Cloud based Realtime DGA Detection Engine is Deployed.</h1>"
+    
 if __name__ == "__main__":
     app.run(debug=False,threaded=False)
