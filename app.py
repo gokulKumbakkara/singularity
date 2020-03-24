@@ -43,5 +43,6 @@ def app():
 
     
 if __name__ == "__main__":
-    app.run(debug=True,Threaded=True)
+    app.run(Threaded=True)
     #,threaded=False
+    #debug=True,
