@@ -46,7 +46,7 @@ Keras==2.3.1
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
 libarchive-c==2.8
-Mako==1.1.1
+Mako==1.2.2
 Markdown==3.1.1
 MarkupSafe==1.1.1
 mistune==0.8.4
